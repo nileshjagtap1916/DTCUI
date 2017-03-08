@@ -2,7 +2,7 @@ package main
 
 type Contract struct {
 	ContractId              string `json:"CONTRACT_ID"`
-	OrderId                 string `json:"ORDER_ID"`
+	OrderId                 string `json:"ORDER_INFO"`
 	PaymentCommitment       bool   `json:"PAYMENT_COMMITMENT"`
 	PaymentConfirmation     bool   `json:"PAYMENT_CONFIRMATION"`
 	InformationCounterparty bool   `json:"INFORMATION_COUNTERPARTY"`
@@ -65,7 +65,7 @@ type Shipment struct {
 type Article struct {
 	ArticleDescription string `json:"ARTICLE_DESC"`
 	ArticleQty         string `json:"ARTICLE_QTY"`
-	ArticlePrice       string `json:"ARTICALE_PRICE"`
+	ArticlePrice       string `json:"ARTICLE_PRICE"`
 }
 
 /*type Company struct {
